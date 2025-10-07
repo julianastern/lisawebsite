@@ -142,6 +142,22 @@
             font-size: 24px;
             cursor: pointer;
         }
+        
+        .lisaphoto {
+        text-align: right;
+         display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 0px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            float:right;
+        }
 
         /* Hero Section */
         .hero {
@@ -165,9 +181,10 @@
 
         .hero-btns {
             display: flex;
-            justify-content: center;
+            justify-content: align-left;
             gap: 20px;
             text-align: center;
+            float:left;
         }
 
         /* Footer */
@@ -306,10 +323,13 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Heading 1</h1>
-            <p>Subtitle 1</p>
+          <div class="lisaphoto">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"width="100" height="100">
+            </div>
+            <h1>About Lisa</h1>
+            <p>*Lisa's bio*</p>
             <div class="hero-btns">
-                <a href="#programs" class="btn btn-secondary">About Us</a>
+                <a href="#programs" class="btn btn-secondary">More about Lisa</a>
             </div>
         </div>
     </section>
