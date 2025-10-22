@@ -147,7 +147,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), no-repeat center center/cover;
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
             color: white;
             padding: 180px 0 100px;
             text-align: center;
@@ -164,6 +164,7 @@
             max-width: 800px;
             margin: 0 auto 30px;
             color: rgba(255, 255, 255, 0.9);
+            text-align: center;
         }
 
         .hero-btns {
@@ -178,21 +179,15 @@
         }
 
         .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            display: flex;
+            flex-direction: column;
             align-items: center;
-        }
-
-        .about-text p {
-            margin-bottom: 20px;
-            font-size: 18px;
-            line-height: 1.7;
-            text-align: center;
+            gap: 40px;
         }
 
         .about-image {
             text-align: center;
+            margin-bottom: 30px;
         }
 
         .about-image img {
@@ -201,6 +196,18 @@
             height: auto;
             border-radius: 8px;
             box-shadow: var(--shadow);
+        }
+
+        .about-text {
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: center;
         }
 
         .about-stats {
@@ -280,27 +287,32 @@
             padding: 25px;
             border-radius: 8px;
             box-shadow: var(--shadow);
+            text-align: left;
         }
 
         .timeline-content h3 {
             color: var(--primary);
             margin-bottom: 10px;
             font-size: 22px;
+            text-align: left;
         }
 
         .timeline-content h4 {
             color: var(--secondary);
             margin-bottom: 15px;
             font-size: 18px;
+            text-align: left;
         }
 
         .timeline-content ul {
             padding-left: 20px;
             margin-bottom: 15px;
+            text-align: left;
         }
 
         .timeline-content li {
             margin-bottom: 8px;
+            text-align: left;
         }
 
         .impact-stats {
@@ -483,10 +495,6 @@
 
         /* Responsive Styles */
         @media (max-width: 992px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
             .hero-btns {
                 flex-direction: column;
                 align-items: center;
@@ -595,10 +603,10 @@
                 <h2>About Lisa</h2>
                 <p>Strategic leader with 20+ years of expertise in fundraising, campaign management, and organizational development</p>
             </div>
-             <div class="about-image">
+            <div class="about-content">
+                <div class="about-image">
                     <img src="Lisa Herzog_portrait_20220201_0812 (1).jpg" alt="Lisa Herzog">
                 </div>
-            <div class="about-content">
                 <div class="about-text">
                     <p>Lisa Herzog is a passionate fundraiser with 20 years of experience in the nonprofit sector, currently serving as Deputy to the Chief Advancement Officer & Campaign Director at National Geographic Society. She has driven transformative growth in resource development through building cultures of innovation, collaboration, and measurable success.</p>
                     
@@ -608,7 +616,7 @@
                     
                     <p>In 2018, Lisa joined Wolf Trap Foundation for the Performing Arts, where she managed the Leadership Giving program and helped to direct foundation-wide fundraising strategy and efforts.</p>
                     
-                    <p>After working Wolf Trap, Lisa joined National Geographic Society. At National Geographic Society, Lisa's leadership included launching and directing the quiet phase of a $1B campaign, overseeing all facets of strategy, execution, and performance. Through the creation of the Society's first Advancement Operations team and implementation of data-informed donor engagement models, she has positioned the organization for lasting philanthropic momentum.</p>
+                    <p>After working at Wolf Trap, Lisa joined National Geographic Society. At National Geographic Society, Lisa's leadership included launching and directing the quiet phase of a $1B campaign, overseeing all facets of strategy, execution, and performance. Through the creation of the Society's first Advancement Operations team and implementation of data-informed donor engagement models, she has positioned the organization for lasting philanthropic momentum.</p>
                     
                     <p>Lisa's approach combines strategic vision with operational excellence, resulting in record-breaking fundraising achievements and sustainable organizational growth.</p>
                     
