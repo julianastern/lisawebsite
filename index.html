@@ -147,7 +147,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), no-repeat center center/cover;
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
             color: white;
             padding: 180px 0 100px;
             text-align: center;
@@ -178,14 +178,28 @@
         }
 
         .about-content {
-            max-width: 900px;
-            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
         }
 
         .about-text p {
             margin-bottom: 20px;
             font-size: 18px;
             line-height: 1.7;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
         }
 
         .about-stats {
@@ -468,6 +482,10 @@
 
         /* Responsive Styles */
         @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
             .hero-btns {
                 flex-direction: column;
                 align-items: center;
@@ -586,7 +604,7 @@
                     
                     <p>In 2018, Lisa joined Wolf Trap Foundation for the Performing Arts, where she managed the Leadership Giving program and helped to direct foundation-wide fundraising strategy and efforts.</p>
                     
-                    <p>After working at Wolf Trap, Lisa joined National Geographic. At National Geographic Society, Lisa's leadership includes launching and directing the quiet phase of a $1B campaign, overseeing all facets of strategy, execution, and performance. Through the creation of the Society's first Advancement Operations team and implementation of data-informed donor engagement models, she has positioned the organization for lasting philanthropic momentum.</p>
+                    <p>At National Geographic Society, Lisa's leadership includes launching and directing the quiet phase of a $1B campaign, overseeing all facets of strategy, execution, and performance. Through the creation of the Society's first Advancement Operations team and implementation of data-informed donor engagement models, she has positioned the organization for lasting philanthropic momentum.</p>
                     
                     <p>Lisa's approach combines strategic vision with operational excellence, resulting in record-breaking fundraising achievements and sustainable organizational growth.</p>
                     
@@ -604,6 +622,9 @@
                             <div class="stat-label">Partnerships</div>
                         </div>
                     </div>
+                </div>
+                <div class="about-image">
+                    <img src="Lisa Herzog_portrait_20220201_0812 (1).jpg" alt="Lisa Herzog">
                 </div>
             </div>
         </div>
