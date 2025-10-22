@@ -1,1 +1,72 @@
+backend:
+  name: github
+  repo: your-username/your-repo-name  # ← UPDATE THIS!
+  branch: main  # ← Change if needed
 
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/home.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtitle", name: "hero_subtitle", widget: "string"}
+          - {label: "Hero Description", name: "hero_description", widget: "text"}
+
+      - file: "content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: "About Title", name: "about_title", widget: "string"}
+          - {label: "About Subtitle", name: "about_subtitle", widget: "string"}
+          - {label: "About Paragraph 1", name: "about_para1", widget: "markdown"}
+          - {label: "About Paragraph 2", name: "about_para2", widget: "markdown"}
+          - {label: "About Paragraph 3", name: "about_para3", widget: "markdown"}
+          - {label: "About Paragraph 4", name: "about_para4", widget: "markdown"}
+          - {label: "About Paragraph 5", name: "about_para5", widget: "markdown"}
+          - {label: "About Image", name: "about_image", widget: "image"}
+
+      - file: "content/experience.md"
+        label: "Experience Page"
+        name: "experience"
+        fields:
+          - {label: "Experience Title", name: "exp_title", widget: "string"}
+          - {label: "Experience Subtitle", name: "exp_subtitle", widget: "string"}
+
+      - file: "content/services.md"
+        label: "Services Page"
+        name: "services"
+        fields:
+          - {label: "Services Title", name: "services_title", widget: "string"}
+          - {label: "Services Subtitle", name: "services_subtitle", widget: "string"}
+          - {label: "Service 1 Title", name: "service1_title", widget: "string"}
+          - {label: "Service 1 Description", name: "service1_desc", widget: "text"}
+          - {label: "Service 2 Title", name: "service2_title", widget: "string"}
+          - {label: "Service 2 Description", name: "service2_desc", widget: "text"}
+          - {label: "Service 3 Title", name: "service3_title", widget: "string"}
+          - {label: "Service 3 Description", name: "service3_desc", widget: "text"}
+
+      - file: "content/contact.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - {label: "Contact Title", name: "contact_title", widget: "string"}
+          - {label: "Contact Subtitle", name: "contact_subtitle", widget: "string"}
+          - {label: "Location", name: "location", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Expertise", name: "expertise", widget: "string"}
+
+  - name: "footer"
+    label: "Footer"
+    files:
+      - file: "content/footer.md"
+        label: "Footer Content"
+        name: "footer"
+        fields:
+          - {label: "Footer Description", name: "footer_desc", widget: "text"}
+          - {label: "Copyright Text", name: "copyright", widget: "string"}
