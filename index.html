@@ -604,6 +604,13 @@
     </style>
 </head>
 <body>
+    <script>
+  // Redirect /admin to /admin/index.html
+  if (window.location.pathname === '/admin') {
+    window.location.href = '/admin/index.html';
+    return;
+  }
+</script>
     <!-- Header -->
     <header>
         <div class="container">
