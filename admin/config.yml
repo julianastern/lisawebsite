@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-repo-name  # ← UPDATE THIS!
+  repo: julianastern/lisawebsite
   branch: main  # ← Change if needed
 
 media_folder: "images/uploads"
